@@ -2,6 +2,11 @@
 
 Este projeto tem o objetivo de criar monitores do tipo Nagios Plugins, para monitorar arquiteturas baseadas na solução Citric SD-WAN
 
+Para fazer o download dos scripts
+```
+git clone https://github.com/wallacepf/sdw_nagios_plugins
+```
+
 ## Inicio
 
 Abaixo você encontrará os detalhes para fazer o setup dos monitores em seu ambiente.
