@@ -57,6 +57,8 @@ check_wanlink.py: Checa a saúde dos links WAN
 Parâmetros: '-H': IP do Destino; '-C': Nome da Community SNMP; '-O': Número do Link*
 Parâmetros 'v3': '-H': IP do Destino; '-U': Nome do usuário; '-P': Senha do usuário; '-O': Número do Link
 
+Retornos: UP/DOWN
+
 Exemplo
 ```
 ./check_wanlink.py -H 10.0.100.10 -C public -L 1
@@ -65,6 +67,8 @@ Exemplo
 *O número do link é uma forma de voce diferenciar os links dentro do equipamento destino. Basicamente, se você possui dois links em uma localidade
 voce deve criar dois serviços utilizando o parametro '-O 1' para o primeiro link e '-O 2' para o segundo link. Caso não haja conhecimento da quantidade
 de links na localidade remota, voce pode rodar o script diretamente sem o parametro '-O' para retornar todos os links existentes.
+
+Retornos: UP/DOWN
 
 check_vpath.py: Checa a saúde do Virtual Path
 
@@ -76,6 +80,8 @@ Exemplo
 ./check_vpath.py -H 10.0.100.10 -C public -O 1
 ./check_vpath_v3.py -H 10.0.100.10 -U testesnmp -P testesnmp -O 1
 ```
+
+Retornos:UP/DOWN/DEGRADAÇÃO
 
 *O número do virtual path segue a mesma lógica do número do link. Possuindo também, a opção de retornar todos os virtual paths existentes quando
 a opção '-O' é omitida.
